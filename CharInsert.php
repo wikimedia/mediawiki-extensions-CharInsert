@@ -94,11 +94,6 @@ function charInsertChar( $start, $end = '', $title = null ) {
 	} else {
 		$inline = charInsertDisplay( $start . $end );
 	}
-	if( $title ) {
-		$extra = ' title="' . htmlspecialchars( $title ) . '"';
-	} else {
-		$extra = '';
-	}
 	return Xml::element( 'a',
 		array(
 			'onclick' => "insertTags('$estart','$eend','');return false",
