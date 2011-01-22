@@ -45,7 +45,7 @@ $messages['ast'] = array(
 	'charinsert-desc' => "Permite la creación d'una caxa JavaScript pa [[MediaWiki:Edittools|enxertar carauteres non estándar]]",
 );
 
-/** Bashkir (Башҡорт)
+/** Bashkir (Башҡортса)
  * @author Haqmar
  */
 $messages['ba'] = array(
@@ -59,7 +59,7 @@ $messages['bar'] = array(
 	'charinsert-desc' => 'Erlaubt, dass a JavaScript-gsteiate Leistn zum [[MediaWiki:Edittools|Eifüng vu Sondazeichn]] eastöid wiad',
 );
 
-/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -555,14 +555,14 @@ $messages['sq'] = array(
 	'charinsert-desc' => 'Lejon krijimin e kutive JavaScript për [[MediaWiki:Edittools|inserting karaktere jo standarde]]',
 );
 
-/** Serbian Cyrillic ekavian (Српски (ћирилица))
+/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
  * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
 	'charinsert-desc' => 'Омогућава прављење јаваскрипт кутијице за [[MediaWiki:Edittools|inserting non-standard characters]]',
 );
 
-/** Serbian Latin ekavian (Srpski (latinica))
+/** Serbian Latin ekavian (‪Srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
