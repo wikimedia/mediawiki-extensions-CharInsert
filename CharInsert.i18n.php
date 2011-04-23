@@ -117,6 +117,13 @@ $messages['cy'] = array(
 	'charinsert-desc' => 'Yn caniatau llunio blwch Javascript ar gyfer [[MediaWiki:Edittools|gosod nodau ansafonol]]',
 );
 
+/** Danish (Dansk)
+ * @author Peter Alberti
+ */
+$messages['da'] = array(
+	'charinsert-desc' => 'Gør det muligt at indsætte [[MediaWiki:Edittools|specialtegn]] i redigeringsvinduet ved hjælp af JavaScript',
+);
+
 /** German (Deutsch)
  * @author Kghbln
  * @author Raimond Spekking
