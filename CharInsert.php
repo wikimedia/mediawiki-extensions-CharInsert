@@ -77,7 +77,7 @@ function charInsertNowiki( $matches ) {
 
 function charInsertItem( $data ) {
 	$chars = explode( '+', $data );
-	if( count( $chars ) > 1 ) {
+	if( count( $chars ) > 1 && $chars[0] !== '' ) {
 		return charInsertChar( $chars[0], $chars[1], 'Click the character while selecting a text' );
 	} elseif( count( $chars ) == 1 ) {
 		return charInsertChar( $chars[0] );
