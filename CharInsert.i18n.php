@@ -335,6 +335,13 @@ $messages['ksh'] = array(
 	'charinsert-desc' => 'Määt Javascrip Knöppsche müjjelesch för [[MediaWiki:Edittools|Sönderbochstave un frempshprochijje Bochstave enzeföje]].',
 );
 
+/** Latin (Latina)
+ * @author MissPetticoats
+ */
+$messages['la'] = array(
+	'charinsert-desc' => 'Licet creare JavaScript loculum pro [[MediaWiki:Edittools|inserting non-standard characters]]',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
