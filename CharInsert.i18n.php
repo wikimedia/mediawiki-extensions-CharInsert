@@ -408,9 +408,10 @@ $messages['myv'] = array(
 
 /** Nahuatl (Nāhuatl)
  * @author Fluence
+ * @author Teòtlalili
  */
 $messages['nah'] = array(
-	'charinsert-desc' => 'Tihuelītīz ticchīhuāz JavaScript caxitl ic [[MediaWiki:Edittools|tlahcuiloa nōncuahquīzqui tlahtōl]]',
+	'charinsert-desc' => 'Tèkàwilia mochîchìwas sè JavaScriptkalli tlèn ìka [[MediaWiki:Edittools|mokìntlàlia tlàtlamantỉkë tlâkuilòmë]]',
 );
 
 /** Low German (Plattdüütsch)
