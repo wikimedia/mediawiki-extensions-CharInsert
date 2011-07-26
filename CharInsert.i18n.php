@@ -425,7 +425,7 @@ $messages['nds'] = array(
  * @author Servien
  */
 $messages['nds-nl'] = array(
-	'charinsert-desc' => 'Hiermee ku-j [[MediaWiki:Edittools|neet-standardkarakters]] invoeren vanuut een deelvienster via JavaScript',
+	'charinsert-desc' => "Hiermee ku'j [[MediaWiki:Edittools|niet-standardkarakters]] invoeren vanuut een deelvienster via JavaScript",
 );
 
 /** Nepali (नेपाली)
