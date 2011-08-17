@@ -535,7 +535,7 @@ $messages['rue'] = array(
 	'charinsert-desc' => 'Доволює створити JavaScript-блок про [[MediaWiki:Edittools|вкладаня незвычайных сімболів]]',
 );
 
-/** Yakut (Саха тыла)
+/** Sakha (Саха тыла)
  * @author HalanTul
  */
 $messages['sah'] = array(
