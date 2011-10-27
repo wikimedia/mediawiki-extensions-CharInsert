@@ -291,6 +291,13 @@ $messages['id'] = array(
 	'charinsert-desc' => 'Mengizinkan pembuatan kotak JavaScript untuk [[MediaWiki:Edittools|menyisipkan karakter non-standar]]',
 );
 
+/** Iloko (Ilokano)
+ * @author Lam-ang
+ */
+$messages['ilo'] = array(
+	'charinsert-desc' => 'Ipabalin na ti pinagaramid iti JavaScript a kahon para iti [[MediaWiki:Edittools|pinagikabil kadagiti saan nga amamo unay nga karakter]]',
+);
+
 /** Italian (Italiano)
  * @author Pietrodn
  */
