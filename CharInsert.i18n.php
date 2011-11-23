@@ -577,7 +577,7 @@ $messages['sq'] = array(
 	'charinsert-desc' => 'Lejon krijimin e kutive JavaScript për [[MediaWiki:Edittools|inserting karaktere jo standarde]]',
 );
 
-/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
  * @author Rancher
  * @author Михајло Анђелковић
  */
@@ -585,7 +585,7 @@ $messages['sr-ec'] = array(
 	'charinsert-desc' => 'Омогућава прављење јаваскрипт кутијице за [[MediaWiki:Edittools|убацивање нестандардизованих знакова]]',
 );
 
-/** Serbian Latin ekavian (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪Srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -627,14 +627,14 @@ $messages['te'] = array(
 	'charinsert-desc' => '[[MediaWiki:Edittools|ప్రత్యేక అక్షరాలను చేర్చడానికి]] ఉద్దేశించిన జావాస్క్రిప్టు పెట్టెని తయారుచేయడానికి పనికివస్తుంది',
 );
 
-/** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
+/** Tajik (Cyrillic script) (Тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
 	'charinsert-desc' => 'Имкони эҷоди қуттиҳои ҶаваСкриптро барои [[MediaWiki:Edittools|дохил кардани аломатҳои ғайристандарӣ]] пешниҳод мекунад',
 );
 
-/** Tajik (Latin) (Тоҷикӣ (Latin))
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
