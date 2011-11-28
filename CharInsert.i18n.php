@@ -184,9 +184,10 @@ $messages['eu'] = array(
 
 /** Persian (فارسی)
  * @author Huji
+ * @author ZxxZxxZ
  */
 $messages['fa'] = array(
-	'charinsert-desc' => 'ایجاد یک جعبه مبتنی بر جاوااسکریپت را برای [[MediaWiki:Edittools|وارد کردن نویسه‌های غیر-استاندارد]] ممکن می‌سازد',
+	'charinsert-desc' => 'ایجاد جعبه‌ای مبتنی بر جاوااسکریپت را برای [[MediaWiki:Edittools|واردکردن نویسه‌های غیراستاندارد]] ممکن می‌کند',
 );
 
 /** Finnish (Suomi)
