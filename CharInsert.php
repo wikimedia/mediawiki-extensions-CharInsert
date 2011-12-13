@@ -37,7 +37,7 @@ $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'CharInsert',
 	'author' => 'Brion Vibber',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:CharInsert',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:CharInsert',
 	'descriptionmsg' => 'charinsert-desc',
 );
 
