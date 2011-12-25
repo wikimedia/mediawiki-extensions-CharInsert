@@ -460,7 +460,7 @@ $messages['nn'] = array(
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'charinsert-desc' => 'Gjør det mulig å sette inn [[MediaWiki:Edittools|spesialtegn]] i redigeringsruten med hjelp av JavaScript',
 );
 
