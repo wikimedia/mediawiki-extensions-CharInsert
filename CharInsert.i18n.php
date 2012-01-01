@@ -422,6 +422,13 @@ $messages['nah'] = array(
 	'charinsert-desc' => 'Tèkàwilia mochîchìwas sè JavaScriptkalli tlèn ìka [[MediaWiki:Edittools|mokìntlàlia tlàtlamantỉkë tlâkuilòmë]]',
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Jon Harald Søby
+ */
+$messages['nb'] = array(
+	'charinsert-desc' => 'Gjør det mulig å sette inn [[MediaWiki:Edittools|spesialtegn]] i redigeringsruten med hjelp av JavaScript',
+);
+
 /** Low German (Plattdüütsch)
  * @author Slomox
  */
@@ -455,13 +462,6 @@ $messages['nl'] = array(
  */
 $messages['nn'] = array(
 	'charinsert-desc' => 'Gjer det mogleg å setja inn [[MediaWiki:Edittools|spesialteikn]] i endringsruta ved hjelp av JavaScript',
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
- */
-$messages['nb'] = array(
-	'charinsert-desc' => 'Gjør det mulig å sette inn [[MediaWiki:Edittools|spesialtegn]] i redigeringsruten med hjelp av JavaScript',
 );
 
 /** Occitan (Occitan)
@@ -555,6 +555,13 @@ $messages['sah'] = array(
  */
 $messages['scn'] = array(
 	'charinsert-desc' => 'Pirmetti di criari nu box JavaScript pi [[MediaWiki:Edittools|nziriri caràttiri non-standard]]',
+);
+
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'charinsert-desc' => '[[MediaWiki:Edittools|සම්මත-නොවන අක්ෂර ඇතුලත් කිරීම]] සඳහා ජාවාස්ක්‍රිප්ට් කොටුවක් තැනීමට ඉඩදෙන්න',
 );
 
 /** Slovak (Slovenčina)
