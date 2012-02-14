@@ -364,6 +364,13 @@ $messages['li'] = array(
 	'charinsert-desc' => "Maak 't meugelik [[MediaWiki:Edittools|neet-standaard karakters]] in te veure venoet e deilvènster via JavaScript",
 );
 
+/** Lithuanian (Lietuvių)
+ * @author Vpovilaitis
+ */
+$messages['lt'] = array(
+	'charinsert-desc' => 'Leidžia sukurti JavaScript pasirinkimą dėl [[MediaWiki:Edittools|nestandartinių simbolių įterpimo]]',
+);
+
 /** Latvian (Latviešu)
  * @author Xil
  */
