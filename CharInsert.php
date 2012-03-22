@@ -49,7 +49,8 @@ function setupSpecialChars( &$parser ) {
 	return true;
 }
 
-function charInsert( $data ) {
+function charInsert( $data, $params, $parser ) {
+	$data = $parser->mStripState->unstripBoth( $data );
 	return implode( "<br />\n",
 		array_map( 'charInsertLine',
 			explode( "\n", trim( $data ) ) ) );
