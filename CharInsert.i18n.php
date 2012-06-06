@@ -309,9 +309,10 @@ $messages['it'] = array(
 /** Japanese (日本語)
  * @author Aotake
  * @author JtFuruhata
+ * @author Shirayuki
  */
 $messages['ja'] = array(
-	'charinsert-desc' => '[[MediaWiki:Edittools|特殊文字の挿入]]を補助するJavaScriptボックスの作成を可能にする',
+	'charinsert-desc' => '[[MediaWiki:Edittools|特殊文字の挿入]]を補助するJavaScriptボックスを作成できるようにする',
 );
 
 /** Javanese (Basa Jawa)
