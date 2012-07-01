@@ -59,7 +59,7 @@ $messages['bar'] = array(
 	'charinsert-desc' => 'Erlaubt, dass a JavaScript-gsteiate Leistn zum [[MediaWiki:Edittools|Eifüng vu Sondazeichn]] eastöid wiad',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  */
@@ -139,7 +139,7 @@ $messages['diq'] = array(
 	'charinsert-desc' => 'Qe [[MediaWiki:Edittools|de kerdişê karektaranê ne-standardî]] viraziyayîşê quti yê JavaScriptî ra destur dano',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -214,7 +214,7 @@ $messages['frp'] = array(
 	'charinsert-desc' => 'Pèrmèt la crèacion d’una bouèta JavaScript por l’[[MediaWiki:Edittools|entrebetâ de caractèros absents des cllaviérs d’usâjo]].',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -263,7 +263,7 @@ $messages['hr'] = array(
 	'charinsert-desc' => 'Omogućava stvaranje JavaScript polja za [[MediaWiki:Edittools|umetanje ne-standardnih znakova]]',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
@@ -545,7 +545,7 @@ $messages['ru'] = array(
 	'charinsert-desc' => 'Позволяет создать JavaScript-поле для [[MediaWiki:Edittools|вставки нестандартных символов]]',
 );
 
-/** Rusyn (Русиньскый)
+/** Rusyn (русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
