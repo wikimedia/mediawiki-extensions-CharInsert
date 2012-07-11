@@ -45,7 +45,7 @@ $messages['ast'] = array(
 	'charinsert-desc' => "Permite la creación d'una caxa JavaScript pa [[MediaWiki:Edittools|enxertar carauteres non estándar]]",
 );
 
-/** Bashkir (Башҡортса)
+/** Bashkir (башҡортса)
  * @author Haqmar
  */
 $messages['ba'] = array(
@@ -415,7 +415,7 @@ $messages['ms'] = array(
 	'charinsert-desc' => 'Membolehkan penciptaan kotak JavaScript untuk [[MediaWiki:Edittools|menyisipkan aksara bukan piawai]]',
 );
 
-/** Erzya (Эрзянь)
+/** Erzya (эрзянь)
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
@@ -430,9 +430,7 @@ $messages['nah'] = array(
 	'charinsert-desc' => 'Tèkàwilia mochîchìwas sè JavaScriptkalli tlèn ìka [[MediaWiki:Edittools|mokìntlàlia tlàtlamantỉkë tlâkuilòmë]]',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Jon Harald Søby
- */
+/** Norwegian Bokmål (‪norsk (bokmål)‬) */
 $messages['nb'] = array(
 	'charinsert-desc' => 'Gjør det mulig å sette inn [[MediaWiki:Edittools|spesialtegn]] i redigeringsruten med hjelp av JavaScript',
 );
