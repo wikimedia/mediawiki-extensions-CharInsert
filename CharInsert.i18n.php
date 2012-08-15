@@ -416,6 +416,13 @@ $messages['ms'] = array(
 	'charinsert-desc' => 'Membolehkan penciptaan kotak JavaScript untuk [[MediaWiki:Edittools|menyisipkan aksara bukan piawai]]',
 );
 
+/** Maltese (Malti)
+ * @author Chrisportelli
+ */
+$messages['mt'] = array(
+	'charinsert-desc' => "Tħalli l-ħolqien ta' kaxxa bil-JavaScript biex [[MediaWiki:Edittools|iddaħħal karattri mhux standard]]",
+);
+
 /** Erzya (эрзянь)
  * @author Botuzhaleny-sodamo
  */
