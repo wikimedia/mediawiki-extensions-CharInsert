@@ -1,33 +1,32 @@
 <?php
-# Copyright (C) 2004,2006 Brion Vibber <brion@pobox.com>
-# http://www.mediawiki.org/
-# 
-# This program is free software; you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation; either version 2 of the License, or 
-# (at your option) any later version.
-# 
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-# GNU General Public License for more details.
-# 
-# You should have received a copy of the GNU General Public License along
-# with this program; if not, write to the Free Software Foundation, Inc.,
-# 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
-# http://www.gnu.org/copyleft/gpl.html
-
 /**
  * Extension to create new character inserts which can be used on
  * the edit page to make it easy to get at special characters and
  * such forth.
  *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along
+ * with this program; if not, write to the Free Software Foundation, Inc.,
+ * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ * http://www.gnu.org/copyleft/gpl.html
+ *
  * @file
- * @author Brion Vibber <brion at pobox.com>
  * @ingroup Extensions
+ * @author Brion Vibber <brion at pobox.com>
+ * @copyright Copyright (C) 2004,2006 Brion Vibber <brion@pobox.com>
+ * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
-if( !defined( 'MEDIAWIKI' ) ) {
+if ( !defined( 'MEDIAWIKI' ) ) {
 	die();
 }
 
@@ -41,7 +40,7 @@ $wgExtensionCredits['parserhook'][] = array(
 	'descriptionmsg' => 'charinsert-desc',
 );
 
-$dir = dirname(__FILE__) . '/';
+$dir = dirname( __FILE__ ) . '/';
 $wgExtensionMessagesFiles['CharInsert'] = $dir . 'CharInsert.i18n.php';
 
 function setupSpecialChars( &$parser ) {
@@ -78,19 +77,19 @@ function charInsertNowiki( $matches ) {
 
 function charInsertItem( $data ) {
 	$chars = explode( '+', $data );
-	if( count( $chars ) > 1 && $chars[0] !== '' ) {
-		return charInsertChar( $chars[0], $chars[1], 'Click the character while selecting a text' );
-	} elseif( count( $chars ) == 1 ) {
+	if ( count( $chars ) > 1 && $chars[0] !== '' ) {
+		return charInsertChar( $chars[0], $chars[1] );
+	} elseif ( count( $chars ) == 1 ) {
 		return charInsertChar( $chars[0] );
 	} else {
 		return charInsertChar( '+' );
 	}
 }
 
-function charInsertChar( $start, $end = '', $title = null ) {
+function charInsertChar( $start, $end = '' ) {
 	$estart = charInsertJsString( $start );
 	$eend   = charInsertJsString( $end   );
-	if( $eend == '' ) {
+	if ( $eend == '' ) {
 		$inline = charInsertDisplay( $start );
 	} else {
 		$inline = charInsertDisplay( $start . $end );
