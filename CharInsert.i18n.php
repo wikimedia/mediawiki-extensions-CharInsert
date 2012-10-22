@@ -438,7 +438,8 @@ $messages['nah'] = array(
 	'charinsert-desc' => 'Tèkàwilia mochîchìwas sè JavaScriptkalli tlèn ìka [[MediaWiki:Edittools|mokìntlàlia tlàtlamantỉkë tlâkuilòmë]]',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎) */
+/** Norwegian Bokmål (norsk (bokmål)‎)
+ */
 $messages['nb'] = array(
 	'charinsert-desc' => 'Gjør det mulig å sette inn [[MediaWiki:Edittools|spesialtegn]] i redigeringsruten med hjelp av JavaScript',
 );
@@ -733,4 +734,3 @@ $messages['zh-hans'] = array(
 $messages['zh-hant'] = array(
 	'charinsert-desc' => '允許增加[[MediaWiki:Edittools|插入非標準文字]]的JavaScript控制項',
 );
-
