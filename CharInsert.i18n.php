@@ -714,6 +714,13 @@ $messages['vo'] = array(
 	'charinsert-desc' => 'Dälon jafi bügila me el JavaScript ad [[MediaWiki:Edittools|nüpladön malatis nekösömik]]',
 );
 
+/** Yiddish (ייִדיש)
+ * @author פוילישער
+ */
+$messages['yi'] = array(
+	'charinsert-desc' => 'דערמעגלעכט שאפן  JavaScript קעסטל פאר [[MediaWiki:Edittools|אריינגעבן אומסטאנדארטע צייכנס]]',
+);
+
 /** Cantonese (粵語)
  * @author Shinjiman
  */
