@@ -11,10 +11,11 @@ $messages['en'] = array(
 
 /** Message documentation (Message documentation)
  * @author Meno25
+ * @author Shirayuki
  * @author The Evil IP address
  */
 $messages['qqq'] = array(
-	'charinsert-desc' => '{{desc}}',
+	'charinsert-desc' => '{{desc|name=Char Insert|url=http://www.mediawiki.org/wiki/Extension:CharInsert}}',
 );
 
 /** Afrikaans (Afrikaans)
