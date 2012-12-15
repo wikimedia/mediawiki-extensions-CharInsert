@@ -46,6 +46,13 @@ $messages['ast'] = array(
 	'charinsert-desc' => "Permite la creación d'una caxa JavaScript pa [[MediaWiki:Edittools|enxertar carauteres non estándar]]",
 );
 
+/** South Azerbaijani (تورکجه)
+ * @author Mousa
+ */
+$messages['azb'] = array(
+	'charinsert-desc' => '[[MediaWiki:Edittools|قِیری-ایستاندارد حرفلری سالماق]] اوچون بیر جاوااسکریپت قوتوسونون یارادیلماسینا ایجازه وئرر',
+);
+
 /** Bashkir (башҡортса)
  * @author Haqmar
  */
