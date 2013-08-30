@@ -67,6 +67,13 @@ $messages['bar'] = array(
 	'charinsert-desc' => 'Erlaubt, dass a JavaScript-gsteiate Leistn zum [[MediaWiki:Edittools|Eifüng vu Sondazeichn]] eastöid wiad',
 );
 
+/** Bikol Central (Bikol Central)
+ * @author Geopoet
+ */
+$messages['bcl'] = array(
+	'charinsert-desc' => 'Minatugot an pagmukna nin kahon sa JavaScript para sa [[MediaWiki:Edittools|isingit an bakong estandarteng mga karakter]]',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
