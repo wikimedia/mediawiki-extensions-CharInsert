@@ -419,9 +419,10 @@ $messages['ml'] = array(
 
 /** Marathi (मराठी)
  * @author Kaustubh
+ * @author V.narsikar
  */
 $messages['mr'] = array(
-	'charinsert-desc' => '[[MediaWiki:Edittools|ठराविक नसलेली चिन्हे]] वापरण्यासाठी एक जावास्क्रीप्ट कळफलक बनवितो',
+	'charinsert-desc' => '[[MediaWiki:Edittools|अप्रमाणित चिन्हे]] वापरण्यासाठी एक जावास्क्रीप्ट कळफलक बनवितो',
 );
 
 /** Malay (Bahasa Melayu)
