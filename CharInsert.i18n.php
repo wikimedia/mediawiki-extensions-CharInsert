@@ -311,7 +311,7 @@ $messages['id'] = array(
  * @author Lam-ang
  */
 $messages['ilo'] = array(
-	'charinsert-desc' => 'Manpalubos ti panagpartuat ti kahon ti JavaScript para iti [[MediaWiki:Edittools|panangisengngat kadagiti saan nga alagaden a karakter]]',
+	'charinsert-desc' => 'Mangipalubos ti panagpartuat ti kahon ti JavaScript para iti [[MediaWiki:Edittools|panangisengngat kadagiti saan nga alagaden a karakter]]',
 );
 
 /** Italian (italiano)
