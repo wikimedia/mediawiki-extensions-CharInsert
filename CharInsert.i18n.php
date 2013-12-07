@@ -118,7 +118,7 @@ $messages['ca'] = array(
 	'charinsert-desc' => "Permet la creació d'una caixa de JavaScript per a [[MediaWiki:Edittools|inserir caràcters no-estàndard]]",
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Li-sung
  */
 $messages['cs'] = array(
