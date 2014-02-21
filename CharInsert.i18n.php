@@ -596,6 +596,13 @@ $messages['scn'] = array(
 	'charinsert-desc' => 'Pirmetti di criari nu box JavaScript pi [[MediaWiki:Edittools|nziriri caràttiri non-standard]]',
 );
 
+/** Scots (Scots)
+ * @author John Reid
+ */
+$messages['sco'] = array(
+	'charinsert-desc' => 'Permits creation o JavaScript box fr [[MediaWiki:Edittools|inserting no-standard chairacters]]',
+);
+
 /** Sinhala (සිංහල)
  * @author පසිඳු කාවින්ද
  */
