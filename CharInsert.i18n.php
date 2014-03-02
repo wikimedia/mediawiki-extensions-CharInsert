@@ -600,7 +600,7 @@ $messages['scn'] = array(
  * @author John Reid
  */
 $messages['sco'] = array(
-	'charinsert-desc' => 'Permits creation o JavaScript box fr [[MediaWiki:Edittools|inserting no-standard chairacters]]',
+	'charinsert-desc' => 'Permits makin o JavaScript kist fer [[MediaWiki:Edittools|insertin no-staundard chairacters]]',
 );
 
 /** Sinhala (සිංහල)
