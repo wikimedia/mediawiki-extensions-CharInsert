@@ -97,7 +97,7 @@ function charInsertChar( $start, $end = '' ) {
 	return Xml::element( 'a',
 		array(
 			'onclick' => "insertTags('$estart','$eend','');return false",
-			'href'    => '#' ),
+			'href'    => "javascript:void()" ),
 		$inline );
 }
 
