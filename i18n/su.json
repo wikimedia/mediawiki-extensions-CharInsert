@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Kandar"
-        ]
-    },
-    "charinsert-desc": "Dipaké nyieun kotak JavaScript pikeun [[MediaWiki:Edittools|ngasupkeun karakter teu baku]]"
+	"@metadata": {
+		"authors": [
+			"Kandar"
+		]
+	},
+	"charinsert-desc": "Dipaké nyieun kotak JavaScript pikeun [[MediaWiki:Edittools|ngasupkeun karakter teu baku]]"
 }

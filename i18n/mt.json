@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Chrisportelli"
-        ]
-    },
-    "charinsert-desc": "Tħalli l-ħolqien ta' kaxxa bil-JavaScript biex [[MediaWiki:Edittools|iddaħħal karattri mhux standard]]"
+	"@metadata": {
+		"authors": [
+			"Chrisportelli"
+		]
+	},
+	"charinsert-desc": "Tħalli l-ħolqien ta' kaxxa bil-JavaScript biex [[MediaWiki:Edittools|iddaħħal karattri mhux standard]]"
 }

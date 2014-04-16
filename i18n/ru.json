@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Lockal",
-            "Александр Сигачёв"
-        ]
-    },
-    "charinsert-desc": "Позволяет создать JavaScript-поле для [[MediaWiki:Edittools|вставки нестандартных символов]]"
+	"@metadata": {
+		"authors": [
+			"Lockal",
+			"Александр Сигачёв"
+		]
+	},
+	"charinsert-desc": "Позволяет создать JavaScript-поле для [[MediaWiki:Edittools|вставки нестандартных символов]]"
 }

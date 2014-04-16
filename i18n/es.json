@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Remember the dot"
-        ]
-    },
-    "charinsert-desc": "Permite la creación de una caja JavaScript para [[MediaWiki:Edittools|insertar caracteres inusuales]]"
+	"@metadata": {
+		"authors": [
+			"Remember the dot"
+		]
+	},
+	"charinsert-desc": "Permite la creación de una caja JavaScript para [[MediaWiki:Edittools|insertar caracteres inusuales]]"
 }

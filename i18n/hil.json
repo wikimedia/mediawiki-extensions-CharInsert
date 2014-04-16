@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Tagimata"
-        ]
-    },
-    "charinsert-desc": "Nagapasugot sa paghimu sang JavaScript kahon para sa [[MediaWiki:Edittools|inserting non-standard characters]]"
+	"@metadata": {
+		"authors": [
+			"Tagimata"
+		]
+	},
+	"charinsert-desc": "Nagapasugot sa paghimu sang JavaScript kahon para sa [[MediaWiki:Edittools|inserting non-standard characters]]"
 }

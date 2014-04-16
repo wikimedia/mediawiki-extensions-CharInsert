@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "CERminator"
-        ]
-    },
-    "charinsert-desc": "Omogućuje pravljenje JavaScript kutije za [[MediaWiki:Edittools|ubacivanje nestandardnih znakova]]"
+	"@metadata": {
+		"authors": [
+			"CERminator"
+		]
+	},
+	"charinsert-desc": "Omogućuje pravljenje JavaScript kutije za [[MediaWiki:Edittools|ubacivanje nestandardnih znakova]]"
 }

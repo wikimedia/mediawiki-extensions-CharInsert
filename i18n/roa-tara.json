@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Joetaras"
-        ]
-    },
-    "charinsert-desc": "Permitte 'a ccreazzione de scatele in Javascript pe [[MediaWiki:Edittools|l'inzerimende de carattere non-stàndàrd]]"
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"charinsert-desc": "Permitte 'a ccreazzione de scatele in Javascript pe [[MediaWiki:Edittools|l'inzerimende de carattere non-stàndàrd]]"
 }

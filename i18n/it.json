@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Pietrodn"
-        ]
-    },
-    "charinsert-desc": "Permette di creare un box JavaScript per [[MediaWiki:Edittools|inserire caratteri non-standard]]"
+	"@metadata": {
+		"authors": [
+			"Pietrodn"
+		]
+	},
+	"charinsert-desc": "Permette di creare un box JavaScript per [[MediaWiki:Edittools|inserire caratteri non-standard]]"
 }

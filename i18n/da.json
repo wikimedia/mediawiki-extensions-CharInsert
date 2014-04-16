@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Peter Alberti"
-        ]
-    },
-    "charinsert-desc": "Gør det muligt at indsætte [[MediaWiki:Edittools|specialtegn]] i redigeringsvinduet ved hjælp af JavaScript"
+	"@metadata": {
+		"authors": [
+			"Peter Alberti"
+		]
+	},
+	"charinsert-desc": "Gør det muligt at indsætte [[MediaWiki:Edittools|specialtegn]] i redigeringsvinduet ved hjælp af JavaScript"
 }
