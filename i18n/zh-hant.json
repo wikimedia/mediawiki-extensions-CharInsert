@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Alex S.H. Lin"
+			"Alex S.H. Lin",
+			"Cwlin0416"
 		]
 	},
-	"charinsert-desc": "允許增加[[MediaWiki:Edittools|插入非標準文字]]的JavaScript控制項"
+	"charinsert-desc": "允許建立 JavaScript 工具用來 [[MediaWiki:Edittools|插入非標準字元]]"
 }
