@@ -30,6 +30,11 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	die();
 }
 
+/**
+ * This PHP entry point is deprecated. Please use wfLoadExtension() and the extension.json file instead.
+ * See https://www.mediawiki.org/wiki/Manual:Extension_registration for more details.
+ */
+
 $wgHooks['ParserFirstCallInit'][] = 'CharInsert::onParserFirstCallInit';
 
 $wgExtensionCredits['parserhook'][] = array(
