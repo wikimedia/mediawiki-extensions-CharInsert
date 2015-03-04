@@ -30,7 +30,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	die();
 }
 
-$wgHooks['ParserFirstCallInit'][] = 'setupSpecialChars';
+$wgHooks['ParserFirstCallInit'][] = 'CharInsert::onParserFirstCallInit';
 
 $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
@@ -40,83 +40,6 @@ $wgExtensionCredits['parserhook'][] = array(
 	'descriptionmsg' => 'charinsert-desc',
 );
 
+$wgAutoloadClasses['CharInsert'] = __DIR__ . '/CharInsert.body.php';
 $wgMessagesDirs['CharInsert'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['CharInsert'] = __DIR__ . '/CharInsert.i18n.php';
-
-function setupSpecialChars( &$parser ) {
-	$parser->setHook( 'charinsert', 'charInsert' );
-	return true;
-}
-
-function charInsert( $data, $params, $parser ) {
-	$data = $parser->mStripState->unstripBoth( $data );
-	return implode( "<br />\n",
-		array_map( 'charInsertLine',
-			explode( "\n", trim( $data ) ) ) );
-}
-
-function charInsertLine( $data ) {
-	return implode( "\n",
-		array_map( 'charInsertItem',
-			preg_split( '/\\s+/', charInsertArmor( $data ) ) ) );
-}
-
-function charInsertArmor( $data ) {
-	return preg_replace_callback(
-		'!<nowiki>(.*?)</nowiki>!i',
-		'charInsertNowiki',
-		$data );
-}
-
-function charInsertNowiki( $matches ) {
-	return str_replace(
-		array( '\t', '\r', ' ' ),
-		array( '&#9;', '&#12;', '&#32;' ),
-		$matches[1] );
-}
-
-function charInsertItem( $data ) {
-	$chars = explode( '+', $data );
-	if ( count( $chars ) > 1 && $chars[0] !== '' ) {
-		return charInsertChar( $chars[0], $chars[1] );
-	} elseif ( count( $chars ) == 1 ) {
-		return charInsertChar( $chars[0] );
-	} else {
-		return charInsertChar( '+' );
-	}
-}
-
-function charInsertChar( $start, $end = '' ) {
-	$estart = charInsertJsString( $start );
-	$eend   = charInsertJsString( $end   );
-	if ( $eend == '' ) {
-		$inline = charInsertDisplay( $start );
-	} else {
-		$inline = charInsertDisplay( $start . $end );
-	}
-	return Xml::element( 'a',
-		array(
-			'onclick' => "insertTags('$estart','$eend','');return false",
-			'href'    => "javascript:void()" ),
-		$inline );
-}
-
-function charInsertJsString( $text ) {
-	return strtr(
-		charInsertDisplay( $text ),
-		array(
-			"\\"   => "\\\\",
-			"\""   => "\\\"",
-			"'"    => "\\'",
-			"\r\n" => "\\n",
-			"\r"   => "\\n",
-			"\n"   => "\\n",
-		) );
-}
-
-function charInsertDisplay( $text ) {
-	static $invisibles = array(     '&nbsp;',     '&#160;' );
-	static $visibles   = array( '&amp;nbsp;', '&amp;#160;' );
-	return Sanitizer::decodeCharReferences(
-			str_replace( $invisibles, $visibles, $text ) );
-}
