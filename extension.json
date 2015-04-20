@@ -4,9 +4,6 @@
 	"url": "https://www.mediawiki.org/wiki/Extension:CharInsert",
 	"descriptionmsg": "charinsert-desc",
 	"type": "parserhook",
-	"ExtensionMessagesFiles": {
-		"CharInsert": "CharInsert.i18n.php"
-	},
 	"Hooks": {
 		"ParserFirstCallInit": [
 			"CharInsert::onParserFirstCallInit"
