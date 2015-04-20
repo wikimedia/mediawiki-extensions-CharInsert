@@ -43,6 +43,7 @@ $wgExtensionCredits['parserhook'][] = array(
 	'author' => 'Brion Vibber',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:CharInsert',
 	'descriptionmsg' => 'charinsert-desc',
+	'license-name' => 'GPL-2.0+',
 );
 
 $wgAutoloadClasses['CharInsert'] = __DIR__ . '/CharInsert.body.php';
