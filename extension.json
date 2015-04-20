@@ -5,9 +5,6 @@
 	"descriptionmsg": "charinsert-desc",
 	"license-name": "GPL-2.0+",
 	"type": "parserhook",
-	"ExtensionMessagesFiles": {
-		"CharInsert": "CharInsert.i18n.php"
-	},
 	"Hooks": {
 		"ParserFirstCallInit": [
 			"CharInsert::onParserFirstCallInit"
