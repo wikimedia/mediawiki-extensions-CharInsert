@@ -17,5 +17,6 @@
 	},
 	"AutoloadClasses": {
 		"CharInsert": "CharInsert.body.php"
-	}
+	},
+	"manifest_version": 1
 }
