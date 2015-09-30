@@ -8,6 +8,8 @@ class CharInsert {
 
 	public static function charInsertHook( $data, $params, Parser $parser ) {
 		$data = $parser->mStripState->unstripBoth( $data );
+		// For mw.toolbar.insertTags()
+		$parser->getOutput()->addModules( 'mediawiki.toolbar' );
 		return implode( "<br />\n",
 			array_map( 'CharInsert::charInsertLine',
 				explode( "\n", trim( $data ) ) ) );
@@ -53,7 +55,7 @@ class CharInsert {
 		}
 		return Xml::element( 'a',
 			array(
-				'onclick' => "insertTags('$estart','$eend','');return false",
+				'onclick' => "mw.toolbar.insertTags('$estart','$eend','');return false",
 				'href'    => "javascript:void()" ),
 			$inline );
 	}
