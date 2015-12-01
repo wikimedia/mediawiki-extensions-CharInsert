@@ -1,0 +1,3 @@
+/* Make it appear non-link like for non-js clients */
+html.client-nojs a.mw-charinsert-item { color: black }
+html.client-nojs a.mw-charinsert-item:hover { text-decoration: none }
