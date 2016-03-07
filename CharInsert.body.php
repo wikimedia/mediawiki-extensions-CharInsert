@@ -56,7 +56,7 @@ class CharInsert {
 		return Xml::element( 'a',
 			[
 				'onclick' => "mw.toolbar.insertTags('$estart','$eend','');return false",
-				'href'    => "javascript:void()"
+				'href'    => 'javascript:void()'
 			],
 			$inline );
 	}
