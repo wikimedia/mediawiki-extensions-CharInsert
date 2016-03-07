@@ -1,7 +1,7 @@
 <?php
 
 class CharInsert {
-	public static function onParserFirstCallInit( Parser &$parser ) {
+	public static function onParserFirstCallInit( Parser $parser ) {
 		$parser->setHook( 'charinsert', 'CharInsert::charInsertHook' );
 		return true;
 	}
