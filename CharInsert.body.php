@@ -38,7 +38,7 @@ class CharInsert {
 		$chars = explode( '+', $data );
 		if ( count( $chars ) > 1 && $chars[0] !== '' ) {
 			return self::charInsertChar( $chars[0], $chars[1] );
-		} elseif ( count( $chars ) == 1 ) {
+		} elseif ( count( $chars ) === 1 ) {
 			return self::charInsertChar( $chars[0] );
 		} else {
 			return self::charInsertChar( '+' );
@@ -79,5 +79,4 @@ class CharInsert {
 		return Sanitizer::decodeCharReferences(
 			str_replace( $invisibles, $visibles, $text ) );
 	}
-
 }
