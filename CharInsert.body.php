@@ -29,8 +29,8 @@ class CharInsert {
 
 	public static function charInsertNowiki( $matches ) {
 		return str_replace(
-			array( '\t', '\r', ' ' ),
-			array( '&#9;', '&#12;', '&#32;' ),
+			[ '\t', '\r', ' ' ],
+			[ '&#9;', '&#12;', '&#32;' ],
 			$matches[1] );
 	}
 
@@ -47,35 +47,36 @@ class CharInsert {
 
 	public static function charInsertChar( $start, $end = '' ) {
 		$estart = self::charInsertJsString( $start );
-		$eend = self::charInsertJsString( $end   );
+		$eend = self::charInsertJsString( $end );
 		if ( $eend == '' ) {
 			$inline = self::charInsertDisplay( $start );
 		} else {
 			$inline = self::charInsertDisplay( $start . $end );
 		}
 		return Xml::element( 'a',
-			array(
+			[
 				'onclick' => "mw.toolbar.insertTags('$estart','$eend','');return false",
-				'href'    => "javascript:void()" ),
+				'href'    => "javascript:void()"
+			],
 			$inline );
 	}
 
 	public static function charInsertJsString( $text ) {
 		return strtr(
 			self::charInsertDisplay( $text ),
-			array(
+			[
 				"\\"   => "\\\\",
 				"\""   => "\\\"",
 				"'"    => "\\'",
 				"\r\n" => "\\n",
 				"\r"   => "\\n",
 				"\n"   => "\\n",
-			) );
+			] );
 	}
 
 	public static function charInsertDisplay( $text ) {
-		static $invisibles = array(     '&nbsp;',     '&#160;' );
-		static $visibles   = array( '&amp;nbsp;', '&amp;#160;' );
+		static $invisibles = [     '&nbsp;',     '&#160;' ];
+		static $visibles   = [ '&amp;nbsp;', '&amp;#160;' ];
 		return Sanitizer::decodeCharReferences(
 			str_replace( $invisibles, $visibles, $text ) );
 	}

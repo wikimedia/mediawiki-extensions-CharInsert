@@ -1,24 +1,25 @@
-/*!
- * Grunt file
- *
- * @package CharInsert
- */
-
 /*jshint node:true */
 module.exports = function ( grunt ) {
-	var conf = grunt.file.readJSON( 'extension.json' );
-
+	grunt.loadNpmTasks( 'grunt-contrib-jshint' );
+	grunt.loadNpmTasks( 'grunt-jsonlint' );
 	grunt.loadNpmTasks( 'grunt-banana-checker' );
 	grunt.loadNpmTasks( 'grunt-jscs' );
-	grunt.loadNpmTasks( 'grunt-jsonlint' );
 
 	grunt.initConfig( {
-		banana: conf.MessagesDirs,
-		jscs: {
+		jshint: {
+			options: {
+				jshintrc: true
+			},
 			all: [
-				'**/*.js',
-				'!node_modules/**'
+				'*.js',
+				'modules/**/*.js'
 			]
+		},
+		jscs: {
+			src: '<%= jshint.all %>'
+		},
+		banana: {
+			all: 'i18n/'
 		},
 		jsonlint: {
 			all: [
@@ -28,6 +29,6 @@ module.exports = function ( grunt ) {
 		}
 	} );
 
-	grunt.registerTask( 'test', [ 'jscs', 'jsonlint', 'banana' ] );
+	grunt.registerTask( 'test', [ 'jshint', 'jscs', 'jsonlint', 'banana' ] );
 	grunt.registerTask( 'default', 'test' );
 };
