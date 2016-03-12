@@ -6,31 +6,10 @@ class CharInsert {
 		return true;
 	}
 
-	/**
-	 * Things like edittools message are added to output directly,
-	 * instead of using something like OutputPage::addWikiText.
-	 * As a result, modules sometimes aren't transferred over.
-	 */
-	public static function onBeforePageDisplay( $out ) {
-		$addModules = false;
-		$title = $out->getTitle();
-		if ( $title->isSpecial( 'Upload' ) ) {
-			$addModules = true;
-		} else {
-			$action = Action::getActionName( $out );
-			if ( in_array( $action, array( 'edit', 'submit' ) ) ) {
-				$addModules = true;
-			}
-		}
-		if ( $addModules ) {
-			$out->addModules( 'ext.charinsert' );
-		}
-	}
-
 	public static function charInsertHook( $data, $params, Parser $parser ) {
 		$data = $parser->mStripState->unstripBoth( $data );
 		// For mw.toolbar.insertTags()
-		$parser->getOutput()->addModules( 'ext.charinsert' );
+		$parser->getOutput()->addModules( 'mediawiki.toolbar' );
 		return implode( "<br />\n",
 			array_map( 'CharInsert::charInsertLine',
 				explode( "\n", trim( $data ) ) ) );
@@ -67,18 +46,31 @@ class CharInsert {
 	}
 
 	public static function charInsertChar( $start, $end = '' ) {
-		$estart = self::charInsertDisplay( $start );
-		$eend = self::charInsertDisplay( $end );
-		$inline = $estart . $eend;
-
+		$estart = self::charInsertJsString( $start );
+		$eend = self::charInsertJsString( $end   );
+		if ( $eend == '' ) {
+			$inline = self::charInsertDisplay( $start );
+		} else {
+			$inline = self::charInsertDisplay( $start . $end );
+		}
 		return Xml::element( 'a',
 			array(
-				'data-mw-charinsert-start' => $estart,
-				'data-mw-charinsert-end' => $eend,
-				'class' => 'mw-charinsert-item mw-charinsert-item-todo',
-				'href' => "#"
-			), $inline
-		);
+				'onclick' => "mw.toolbar.insertTags('$estart','$eend','');return false",
+				'href'    => "javascript:void()" ),
+			$inline );
+	}
+
+	public static function charInsertJsString( $text ) {
+		return strtr(
+			self::charInsertDisplay( $text ),
+			array(
+				"\\"   => "\\\\",
+				"\""   => "\\\"",
+				"'"    => "\\'",
+				"\r\n" => "\\n",
+				"\r"   => "\\n",
+				"\n"   => "\\n",
+			) );
 	}
 
 	public static function charInsertDisplay( $text ) {
