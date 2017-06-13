@@ -85,8 +85,8 @@ class CharInsert {
 	}
 
 	public static function charInsertDisplay( $text ) {
-		static $invisibles = [     '&nbsp;',     '&#160;' ];
-		static $visibles   = [ '&amp;nbsp;', '&amp;#160;' ];
+		static $invisibles = [ '&nbsp;', '&#160;' ];
+		static $visibles = [ '&amp;nbsp;', '&amp;#160;' ];
 		return Sanitizer::decodeCharReferences(
 			str_replace( $invisibles, $visibles, $text ) );
 	}
