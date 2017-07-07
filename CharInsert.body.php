@@ -10,6 +10,7 @@ class CharInsert {
 	 * Things like edittools message are added to output directly,
 	 * instead of using something like OutputPage::addWikiText.
 	 * As a result, modules sometimes aren't transferred over.
+	 * @param OutputPage $out OutputPage to work on
 	 */
 	public static function onBeforePageDisplay( $out ) {
 		$addModules = false;
