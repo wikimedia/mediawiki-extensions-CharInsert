@@ -31,7 +31,6 @@ class CharInsert {
 
 	public static function charInsertHook( $data, $params, Parser $parser ) {
 		$data = $parser->mStripState->unstripBoth( $data );
-		// For mw.toolbar.insertTags()
 		$parser->getOutput()->addModules( 'ext.charinsert' );
 		$parser->getOutput()->addModuleStyles( 'ext.charinsert.styles' );
 		return implode( "<br />\n",
