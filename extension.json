@@ -24,7 +24,7 @@
 				"ext.charinsert.js"
 			],
 			"dependencies": [
-				"mediawiki.toolbar"
+				"jquery.textSelection"
 			],
 			"targets": [
 				"desktop"

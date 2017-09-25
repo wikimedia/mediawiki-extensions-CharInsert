@@ -1,5 +1,11 @@
 ( function ( $, mw ) {
 	var addClickHandlers = function ( $content ) {
+		var $currentFocused = $( 'wpTextbox1' );
+		// Apply to dynamically created textboxes as well as normal ones
+		$( document ).on( 'focus', 'textarea, input:text', function () {
+			$currentFocused = $( this );
+		} );
+
 		$content.find( 'a.mw-charinsert-item' ).each( function () {
 			var $elm = $( this ),
 				start = $elm.data( 'mw-charinsert-start' ),
@@ -9,7 +15,15 @@
 			}
 			$elm.click( function ( e ) {
 				e.preventDefault();
-				mw.toolbar.insertTags( start, end, '' );
+				if ( $currentFocused.length ) {
+					$currentFocused.textSelection(
+						'encapsulateSelection', {
+							pre: start,
+							peri: '',
+							post: end
+						}
+					);
+				}
 			} )
 				.data( 'mw-charinsert-done', true )
 				.attr( 'href', '#' );
