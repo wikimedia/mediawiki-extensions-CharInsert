@@ -2,7 +2,7 @@
 	var addClickHandlers = function ( $content ) {
 		var $currentFocused = $( 'wpTextbox1' );
 		// Apply to dynamically created textboxes as well as normal ones
-		$( document ).on( 'focus', 'textarea, input:text', function () {
+		$( document ).on( 'focus', 'textarea, input:text, .CodeMirror', function () {
 			$currentFocused = $( this );
 		} );
 
