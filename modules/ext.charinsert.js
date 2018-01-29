@@ -36,4 +36,4 @@
 		addClickHandlers( $( document ) );
 	} );
 	mw.hook( 'wikipage.content' ).add( addClickHandlers );
-} )( jQuery, mediaWiki );
+}( jQuery, mediaWiki ) );
