@@ -2,13 +2,13 @@
 	var $currentFocused;
 	function addClickHandlers( $content ) {
 		$content.find( 'a.mw-charinsert-item' ).each( function () {
-			var $elm = $( this ),
-				start = $elm.data( 'mw-charinsert-start' ),
-				end = $elm.data( 'mw-charinsert-end' );
-			if ( $elm.data( 'mw-charinsert-done' ) ) {
+			var $item = $( this ),
+				start = $item.data( 'mw-charinsert-start' ),
+				end = $item.data( 'mw-charinsert-end' );
+			if ( $item.data( 'mw-charinsert-done' ) ) {
 				return;
 			}
-			$elm.click( function ( e ) {
+			$item.on( 'click', function ( e ) {
 				e.preventDefault();
 				if ( $currentFocused.length ) {
 					$currentFocused.textSelection(
@@ -31,7 +31,12 @@
 		$currentFocused = $( '#wpTextbox1' );
 		// Apply to dynamically created textboxes as well as normal ones
 		$( document ).on( 'focus', 'textarea, input:text, .CodeMirror', function () {
-			$currentFocused = $( this );
+			if ( $( this ).is( '.CodeMirror' ) ) {
+				// CodeMirror hooks into #wpTextbox1 for textSelection changes
+				$currentFocused = $( '#wpTextbox1' );
+			} else {
+				$currentFocused = $( this );
+			}
 		} );
 		addClickHandlers( $( document ) );
 	} );
