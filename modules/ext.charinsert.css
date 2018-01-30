@@ -1,8 +1,9 @@
 /* Make it appear non-link like for non-js clients */
-html.client-nojs a.mw-charinsert-item {
+.client-nojs .mw-charinsert-item {
 	color: #000;
+	cursor: text;
 }
 
-html.client-nojs a.mw-charinsert-item:hover {
+.client-nojs .mw-charinsert-item:hover {
 	text-decoration: none;
 }
