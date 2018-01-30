@@ -36,8 +36,7 @@
 			],
 			"targets": [
 				"desktop"
-			],
-			"group": "noscript"
+			]
 		}
 
 	},
