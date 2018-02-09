@@ -45,7 +45,7 @@
 		"remoteExtPath": "CharInsert/modules"
 	},
 	"AutoloadClasses": {
-		"CharInsert": "CharInsert.body.php"
+		"CharInsert": "includes/CharInsert.php"
 	},
 	"manifest_version": 1
 }
