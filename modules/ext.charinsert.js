@@ -1,4 +1,4 @@
-( function ( $, mw ) {
+( function () {
 	var $currentFocused;
 	function addClickHandlers( $content ) {
 		$content.find( 'a.mw-charinsert-item' ).each( function () {
@@ -41,4 +41,4 @@
 		addClickHandlers( $( document ) );
 	} );
 	mw.hook( 'wikipage.content' ).add( addClickHandlers );
-}( jQuery, mediaWiki ) );
+}() );
