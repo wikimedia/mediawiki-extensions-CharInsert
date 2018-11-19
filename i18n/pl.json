@@ -2,8 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Derbeth",
-			"Sp5uhe"
+			"Sp5uhe",
+			"Railfail536"
 		]
 	},
-	"charinsert-desc": "Umożliwia stworzenie z użyciem JavaScriptu ramki z linkami [[MediaWiki:Edittools|wstawiającymi niestandardowe znaki]]"
+	"charinsert-desc": "Umożliwia stworzenie z użyciem JavaScriptu boksu z linkami [[MediaWiki:Edittools|wstawiającymi niestandardowe znaki]]"
 }
