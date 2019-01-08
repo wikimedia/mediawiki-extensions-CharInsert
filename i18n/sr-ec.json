@@ -6,5 +6,5 @@
 			"BadDog"
 		]
 	},
-	"charinsert-desc": "Омогућава прављење јаваскрипт кутијице за [[MediaWiki:Edittools|уметање нестандардизованих знакова]]"
+	"charinsert-desc": "Омогућава прављење JavaScript оквира за [[MediaWiki:Edittools|уметање нестандардних знакова]]"
 }
