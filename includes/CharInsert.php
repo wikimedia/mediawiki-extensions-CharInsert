@@ -2,28 +2,19 @@
 
 class CharInsert {
 	public static function onParserFirstCallInit( Parser $parser ) {
-		$parser->setHook( 'charinsert', 'CharInsert::charInsertHook' );
-		return true;
+		$parser->setHook( 'charinsert', [ self::class, 'charInsertHook' ] );
 	}
 
 	/**
 	 * Things like edittools message are added to output directly,
 	 * instead of using something like OutputPage::addWikiText.
 	 * As a result, modules sometimes aren't transferred over.
-	 * @param OutputPage $out OutputPage to work on
+	 * @param OutputPage $out
 	 */
 	public static function onBeforePageDisplay( $out ) {
-		$addModules = false;
-		$title = $out->getTitle();
-		if ( $title->isSpecial( 'Upload' ) ) {
-			$addModules = true;
-		} else {
-			$action = Action::getActionName( $out );
-			if ( in_array( $action, [ 'edit', 'submit' ] ) ) {
-				$addModules = true;
-			}
-		}
-		if ( $addModules ) {
+		if ( $out->getTitle()->isSpecial( 'Upload' ) ||
+			in_array( Action::getActionName( $out ), [ 'edit', 'submit' ] )
+		) {
 			$out->addModules( 'ext.charinsert' );
 			$out->addModuleStyles( 'ext.charinsert.styles' );
 		}
@@ -34,19 +25,20 @@ class CharInsert {
 		$parser->getOutput()->addModules( 'ext.charinsert' );
 		$parser->getOutput()->addModuleStyles( 'ext.charinsert.styles' );
 		return implode( "<br />\n",
-			array_map( 'CharInsert::charInsertLine',
+			array_map( [ self::class, 'charInsertLine' ],
 				explode( "\n", trim( $data ) ) ) );
 	}
+
 	public static function charInsertLine( $data ) {
 		return implode( "\n",
-			array_map( 'CharInsert::charInsertItem',
-				preg_split( '/\\s+/', self::charInsertArmor( $data ) ) ) );
+			array_map( [ self::class, 'charInsertItem' ],
+				preg_split( '/\s+/', self::charInsertArmor( $data ) ) ) );
 	}
 
 	public static function charInsertArmor( $data ) {
 		return preg_replace_callback(
 			'!<nowiki>(.*?)</nowiki>!i',
-			'CharInsert::charInsertNowiki',
+			[ self::class, 'charInsertNowiki' ],
 			$data );
 	}
 
