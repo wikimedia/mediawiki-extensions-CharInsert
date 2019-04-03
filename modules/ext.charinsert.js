@@ -28,13 +28,13 @@
 	// However, we also want to catch things like live preview,
 	// so we use both the onready hook and wikipage.content.
 	$( function () {
-		// eslint-disable-next-line jquery/no-global-selector
+		// eslint-disable-next-line no-jquery/no-global-selector
 		$currentFocused = $( '#wpTextbox1' );
 		// Apply to dynamically created textboxes as well as normal ones
 		$( document ).on( 'focus', 'textarea, input:text, .CodeMirror', function () {
 			if ( $( this ).is( '.CodeMirror' ) ) {
 				// CodeMirror hooks into #wpTextbox1 for textSelection changes
-				// eslint-disable-next-line jquery/no-global-selector
+				// eslint-disable-next-line no-jquery/no-global-selector
 				$currentFocused = $( '#wpTextbox1' );
 			} else {
 				$currentFocused = $( this );
