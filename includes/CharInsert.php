@@ -38,15 +38,15 @@ class CharInsert {
 	public static function charInsertArmor( $data ) {
 		return preg_replace_callback(
 			'!<nowiki>(.*?)</nowiki>!i',
-			[ self::class, 'charInsertNowiki' ],
-			$data );
-	}
-
-	public static function charInsertNowiki( $matches ) {
-		return str_replace(
-			[ '\t', '\r', ' ' ],
-			[ '&#9;', '&#12;', '&#32;' ],
-			$matches[1] );
+			function ( array $matches ) {
+				return strtr( $matches[1], [
+					'\t' => '&#9;',
+					'\r' => '&#12;',
+					' ' => '&#32;',
+				] );
+			},
+			$data
+		);
 	}
 
 	public static function charInsertItem( $data ) {
