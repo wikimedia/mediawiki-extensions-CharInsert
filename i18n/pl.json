@@ -3,7 +3,8 @@
 		"authors": [
 			"Derbeth",
 			"Sp5uhe",
-			"Railfail536"
+			"Railfail536",
+			"Rail"
 		]
 	},
 	"charinsert-desc": "Umożliwia stworzenie z użyciem JavaScriptu boksu z linkami [[MediaWiki:Edittools|wstawiającymi niestandardowe znaki]]"
