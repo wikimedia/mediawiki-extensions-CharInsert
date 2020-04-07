@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Rotem Liss",
-			"Guycn2"
+			"Guycn2",
+			"Rotem Liss"
 		]
 	},
 	"charinsert-desc": "מתן אפשרות ליצירת תיבת JavaScript עבור [[MediaWiki:Edittools|הוספת תווים בלתי־סטנדרטיים]]"
