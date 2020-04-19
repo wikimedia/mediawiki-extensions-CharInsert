@@ -6,11 +6,11 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "parserhook",
 	"requires": {
-		"MediaWiki": ">= 1.29.0"
+		"MediaWiki": ">= 1.31.0"
 	},
 	"Hooks": {
-		"ParserFirstCallInit": "CharInsert::onParserFirstCallInit",
-		"BeforePageDisplay": "CharInsert::onBeforePageDisplay"
+		"ParserFirstCallInit": "MediaWiki\\Extensions\\CharInsert\\CharInsert::onParserFirstCallInit",
+		"BeforePageDisplay": "MediaWiki\\Extensions\\CharInsert\\CharInsert::onBeforePageDisplay"
 	},
 	"MessagesDirs": {
 		"CharInsert": [
@@ -43,8 +43,8 @@
 		"localBasePath": "modules",
 		"remoteExtPath": "CharInsert/modules"
 	},
-	"AutoloadClasses": {
-		"CharInsert": "includes/CharInsert.php"
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extensions\\CharInsert\\": "includes/"
 	},
 	"manifest_version": 2
 }

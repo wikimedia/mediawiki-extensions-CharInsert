@@ -1,5 +1,13 @@
 <?php
 
+namespace MediaWiki\Extensions\CharInsert;
+
+use Action;
+use OutputPage;
+use Parser;
+use Sanitizer;
+use Xml;
+
 class CharInsert {
 	public static function onParserFirstCallInit( Parser $parser ) {
 		$parser->setHook( 'charinsert', [ self::class, 'charInsertHook' ] );
