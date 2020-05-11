@@ -5,6 +5,9 @@
 	"descriptionmsg": "charinsert-desc",
 	"license-name": "GPL-2.0-or-later",
 	"type": "parserhook",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
 	"Hooks": {
 		"ParserFirstCallInit": "CharInsert::onParserFirstCallInit",
 		"BeforePageDisplay": "CharInsert::onBeforePageDisplay"
@@ -43,5 +46,5 @@
 	"AutoloadClasses": {
 		"CharInsert": "includes/CharInsert.php"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }
