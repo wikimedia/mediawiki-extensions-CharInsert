@@ -29,7 +29,7 @@ class CharInsert {
 	}
 
 	public static function charInsertHook( $data, $params, Parser $parser ) {
-		$data = $parser->mStripState->unstripBoth( $data );
+		$data = $parser->getStripState()->unstripBoth( $data );
 		$parser->getOutput()->addModules( 'ext.charinsert' );
 		$parser->getOutput()->addModuleStyles( 'ext.charinsert.styles' );
 		return implode( "<br />\n",
