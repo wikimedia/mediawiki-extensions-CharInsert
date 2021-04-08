@@ -2,32 +2,11 @@
 
 namespace MediaWiki\Extensions\CharInsert;
 
-use Action;
-use OutputPage;
 use Parser;
 use Sanitizer;
 use Xml;
 
 class CharInsert {
-	public static function onParserFirstCallInit( Parser $parser ) {
-		$parser->setHook( 'charinsert', [ self::class, 'charInsertHook' ] );
-	}
-
-	/**
-	 * Things like edittools message are added to output directly,
-	 * instead of using something like OutputPage::addWikiText.
-	 * As a result, modules sometimes aren't transferred over.
-	 * @param OutputPage $out
-	 */
-	public static function onBeforePageDisplay( $out ) {
-		if ( $out->getTitle()->isSpecial( 'Upload' ) ||
-			in_array( Action::getActionName( $out ), [ 'edit', 'submit' ] )
-		) {
-			$out->addModules( 'ext.charinsert' );
-			$out->addModuleStyles( 'ext.charinsert.styles' );
-		}
-	}
-
 	public static function charInsertHook( $data, $params, Parser $parser ) {
 		$data = $parser->getStripState()->unstripBoth( $data );
 		$parser->getOutput()->addModules( 'ext.charinsert' );
