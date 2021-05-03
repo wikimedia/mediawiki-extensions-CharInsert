@@ -25,7 +25,7 @@ class CharInsert {
 	public static function charInsertArmor( $data ) {
 		return preg_replace_callback(
 			'!<nowiki>(.*?)</nowiki>!i',
-			function ( array $matches ) {
+			static function ( array $matches ) {
 				return strtr( $matches[1], [
 					'\t' => '&#9;',
 					'\r' => '&#12;',
