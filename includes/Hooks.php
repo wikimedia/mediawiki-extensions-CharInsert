@@ -9,7 +9,7 @@ class Hooks implements
 	\MediaWiki\Hook\ParserFirstCallInitHook
 {
 	/** @inheritDoc */
-	public function onBeforePageDisplay( $out, $skin ) : void {
+	public function onBeforePageDisplay( $out, $skin ): void {
 		if ( $out->getTitle()->isSpecial( 'Upload' ) ||
 			in_array( Action::getActionName( $out ), [ 'edit', 'submit' ] )
 		) {
