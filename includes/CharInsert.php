@@ -1,6 +1,6 @@
 <?php
 
-namespace MediaWiki\Extensions\CharInsert;
+namespace MediaWiki\Extension\CharInsert;
 
 use Parser;
 use Sanitizer;

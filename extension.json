@@ -14,7 +14,7 @@
 	},
 	"HookHandlers": {
 		"CharInsertHookHandler": {
-			"class": "MediaWiki\\Extensions\\CharInsert\\Hooks"
+			"class": "MediaWiki\\Extension\\CharInsert\\Hooks"
 		}
 	},
 	"MessagesDirs": {
@@ -49,7 +49,7 @@
 		"remoteExtPath": "CharInsert/modules"
 	},
 	"AutoloadNamespaces": {
-		"MediaWiki\\Extensions\\CharInsert\\": "includes/"
+		"MediaWiki\\Extension\\CharInsert\\": "includes/"
 	},
 	"manifest_version": 2
 }
