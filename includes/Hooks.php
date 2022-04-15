@@ -2,8 +2,6 @@
 
 namespace MediaWiki\Extension\CharInsert;
 
-use Action;
-
 class Hooks implements
 	\MediaWiki\Hook\BeforePageDisplayHook,
 	\MediaWiki\Hook\ParserFirstCallInitHook
@@ -11,7 +9,7 @@ class Hooks implements
 	/** @inheritDoc */
 	public function onBeforePageDisplay( $out, $skin ): void {
 		if ( $out->getTitle()->isSpecial( 'Upload' ) ||
-			in_array( Action::getActionName( $out ), [ 'edit', 'submit' ] )
+			in_array( $out->getActionName(), [ 'edit', 'submit' ] )
 		) {
 			$out->addModules( 'ext.charinsert' );
 			$out->addModuleStyles( 'ext.charinsert.styles' );
