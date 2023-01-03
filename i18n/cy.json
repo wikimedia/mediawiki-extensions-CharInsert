@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Afalau",
 			"Lloffiwr"
 		]
 	},
-	"charinsert-desc": "Yn caniatau llunio blwch Javascript ar gyfer [[MediaWiki:Edittools|gosod nodau ansafonol]]"
+	"charinsert-desc": "Mae hwn caniatáu llunio blwch Javascript ar gyfer [[MediaWiki:Edittools|gosod nodau ansafonol]]"
 }
