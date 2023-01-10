@@ -31,6 +31,7 @@
 				"jquery.textSelection"
 			],
 			"targets": [
+				"mobile",
 				"desktop"
 			]
 		},
@@ -39,6 +40,7 @@
 				"ext.charinsert.css"
 			],
 			"targets": [
+				"mobile",
 				"desktop"
 			]
 		}
