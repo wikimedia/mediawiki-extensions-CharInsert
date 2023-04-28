@@ -2,9 +2,7 @@
 	var $currentFocused;
 	function addClickHandlers( $content ) {
 		$content.find( 'a.mw-charinsert-item' ).each( function () {
-			var $item = $( this ),
-				start = $item.data( 'mw-charinsert-start' ),
-				end = $item.data( 'mw-charinsert-end' );
+			var $item = $( this );
 			if ( $item.data( 'mw-charinsert-done' ) ) {
 				return;
 			}
@@ -13,9 +11,9 @@
 				if ( $currentFocused.length ) {
 					$currentFocused.textSelection(
 						'encapsulateSelection', {
-							pre: start,
+							pre: $item.data( 'mw-charinsert-start' ),
 							peri: '',
-							post: end
+							post: $item.data( 'mw-charinsert-end' )
 						}
 					);
 				}
