@@ -1,8 +1,8 @@
 ( function () {
-	var $currentFocused;
+	let $currentFocused;
 	function addClickHandlers( $content ) {
 		$content.find( 'a.mw-charinsert-item' ).each( function () {
-			var $item = $( this );
+			const $item = $( this );
 			if ( $item.data( 'mw-charinsert-done' ) ) {
 				return;
 			}
