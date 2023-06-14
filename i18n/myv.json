@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Botuzhaleny-sodamo"
+			"Botuzhaleny-sodamo",
+			"Denö"
 		]
 	},
-	"charinsert-desc": "Максы теемс-шкамс JavaScript-умине [[MediaWiki:Edittools|аволь эрьва чинь символонь путома]]нь туртов"
+	"charinsert-desc": "Максы теемс-шкамс JavaScript-умине [[MediaWiki:Edittools|inserting non-standard characters]] туртов"
 }
