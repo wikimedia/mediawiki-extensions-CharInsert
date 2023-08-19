@@ -6,7 +6,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "parserhook",
 	"requires": {
-		"MediaWiki": ">= 1.38.0"
+		"MediaWiki": ">= 1.41"
 	},
 	"Hooks": {
 		"ParserFirstCallInit": "CharInsertHookHandler",
@@ -44,7 +44,6 @@
 				"desktop"
 			]
 		}
-
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "modules",
