@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"John Reid"
+			"John Reid",
+			"CiphriusKane"
 		]
 	},
-	"charinsert-desc": "Permits the cræftin o JavaScript kist fer [[MediaWiki:Edittools|insertin non-staundairt chairacters]]"
+	"charinsert-desc": "Allous the makin o JavaScript kist fur [[MediaWiki:Edittools|puttin in non-staundart chairacters]]"
 }
