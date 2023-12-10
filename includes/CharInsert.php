@@ -2,8 +2,8 @@
 
 namespace MediaWiki\Extension\CharInsert;
 
+use MediaWiki\Parser\Sanitizer;
 use Parser;
-use Sanitizer;
 use Xml;
 
 class CharInsert {
