@@ -29,19 +29,11 @@
 			],
 			"dependencies": [
 				"jquery.textSelection"
-			],
-			"targets": [
-				"mobile",
-				"desktop"
 			]
 		},
 		"ext.charinsert.styles": {
 			"styles": [
 				"ext.charinsert.css"
-			],
-			"targets": [
-				"mobile",
-				"desktop"
 			]
 		}
 	},
