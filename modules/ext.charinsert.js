@@ -6,7 +6,7 @@
 			if ( $item.data( 'mw-charinsert-done' ) ) {
 				return;
 			}
-			$item.on( 'click', function ( e ) {
+			$item.on( 'click', ( e ) => {
 				e.preventDefault();
 				if ( $currentFocused.length ) {
 					$currentFocused.textSelection(
@@ -25,7 +25,7 @@
 	// Normally <charinsert> appears outside of content area.
 	// However, we also want to catch things like live preview,
 	// so we use both the onready hook and wikipage.content.
-	$( function () {
+	$( () => {
 		// eslint-disable-next-line no-jquery/no-global-selector
 		$currentFocused = $( '#wpTextbox1' );
 		// Apply to dynamically created textboxes as well as normal ones
