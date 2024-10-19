@@ -4,7 +4,7 @@ namespace MediaWiki\Extension\CharInsert;
 
 use MediaWiki\Parser\Parser;
 use MediaWiki\Parser\Sanitizer;
-use Xml;
+use MediaWiki\Xml\Xml;
 
 class CharInsert {
 	/** @var array XML-style attributes passed to the tag */
