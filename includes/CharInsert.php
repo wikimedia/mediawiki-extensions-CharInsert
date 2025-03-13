@@ -14,12 +14,16 @@ class CharInsert {
 
 	/**
 	 * Main entry point, called by the parser.
-	 * @param string $data The textual content of the <charinsert> tag
+	 * @param string|null $data The textual content of the <charinsert> tag
 	 * @param array $params XML-style attributes of the <charinsert> tag
 	 * @param Parser $parser
 	 * @return string
 	 */
 	public static function charInsertHook( $data, array $params, Parser $parser ): string {
+		if ( $data === null ) {
+			return '';
+		}
+
 		return ( new self( $params, $parser ) )->expand( $data );
 	}
 
