@@ -2,9 +2,9 @@
 
 namespace MediaWiki\Extension\CharInsert;
 
+use MediaWiki\Html\Html;
 use MediaWiki\Parser\Parser;
 use MediaWiki\Parser\Sanitizer;
-use MediaWiki\Xml\Xml;
 
 class CharInsert {
 	/** @var array XML-style attributes passed to the tag */
@@ -115,7 +115,7 @@ class CharInsert {
 
 		// Having no href attribute makes the link be more
 		// easily copy and pasteable for non-js users.
-		return Xml::element( 'a',
+		return Html::element( 'a',
 			[
 				'data-mw-charinsert-start' => $estart,
 				'data-mw-charinsert-end' => $eend,
