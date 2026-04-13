@@ -2,8 +2,8 @@
 
 namespace MediaWiki\Extension\CharInsert;
 
-use MediaWiki\Hook\ParserFirstCallInitHook;
 use MediaWiki\Output\Hook\BeforePageDisplayHook;
+use MediaWiki\Parser\Hook\ParserFirstCallInitHook;
 
 class Hooks implements
 	BeforePageDisplayHook,
